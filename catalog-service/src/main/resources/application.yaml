@@ -1,0 +1,16 @@
+#PORT
+server.port: 8081
+
+#LOGGING
+logging:
+  level:
+    root: INFO
+    com.codeburps: DEBUG
+
+# Prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+

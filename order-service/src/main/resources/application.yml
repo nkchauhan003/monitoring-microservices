@@ -1,0 +1,32 @@
+#SWAGGER
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+# CATALOG SERVICE ROOT
+api:
+  catalog:
+    baseurl: http://localhost:8081
+
+#ACTUATOR
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+    health:
+      show-details: always
+
+#PORT
+server.port: 8080
+
+#LOGGING
+logging:
+  level:
+    root: INFO
+    com.codeburps: DEBUG
+
+
+
+
+
